@@ -5,6 +5,8 @@ const router = express.Router();
 // 쿠키 생성
 router.get("/", (req, res) => {
   console.log("기본경로");
+  // .env 테스트
+  console.log(process.env.DB_PASSWORD);
 });
 
 module.exports = router;
