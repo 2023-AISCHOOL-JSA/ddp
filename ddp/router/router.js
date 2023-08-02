@@ -6,5 +6,8 @@ const router = express.Router();
 router.get("/", (req, res) => {
   console.log("기본경로");
 });
+router.get("/login", (req, res) => {
+  console.log("로그인");
+});
 
 module.exports = router;
